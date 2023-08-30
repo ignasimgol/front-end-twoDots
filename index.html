@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
     <title>2 Dots Game</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <header>
+        <img class="logo" src="./img/alienLogo.png" alt="Logo Juego">
+    </header>
+
+    <main>
+        <div>
+            <p id="error"></p>
+        </div>
+        <form action="juego.html" id="formEntrada">
+            <div class="itemform">
+                <label for="nick">Enter your nick: </label>
+                <input type="text" name="nick" value="@" id="nicka" readonly>
+                <input type="text" name="nick" id="nick" required minlength="2">
+            </div>
+            <div class="itemform">
+                <label for="email">Enter you email: </label>
+                <input type="text" name="email" id="email" placeholder="example@example.com">
+            </div>
+            <div class="itemform">
+                <label for="nick">Tamaño del Juego*</label>
+                <select name="tamano" id="tamano" required>
+                    <option value="0">--Please choose an option--</option>
+                    <option value="1">4x4</option>
+                    <option value="2">5x5</option>
+                    <option value="3">6x6</option>
+                </select>
+            </div>
+            <div class="itemform">
+                <p id="obligatorio">* Obligatorio</p>
+            </div>
+            <div class="itemform">
+                <input type="submit" value="PLAY" id="jugar">
+            </div>
+           
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Curso FrontEnd de HTML5, CSS3 & JS</p>
+    </footer>
+    <script src="./js/datosUsuario.js"></script>
+    <script src="./js/script.js"></script>
     
 </body>
 </html>
