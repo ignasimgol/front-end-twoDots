@@ -48,6 +48,7 @@ input[type="submit"]{
     font-weight: 400;
     border-radius: 5px;
     width: 100%;
+    margin-top: 10px;
 }
 
 select{
@@ -90,4 +91,48 @@ footer{
 #obligatorio{
     margin-top: -10px;
     font-size: 13px;
+}
+
+#avatar{
+    float: left;
+}
+
+.avatarItem{
+    border: solid 3px #110d0d;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.avatarImgItem{
+    width: 60px;
+    height: 60px;
+}
+
+#avatarContainer {
+    display: flex;
+    border: solid 3px #110d0d;
+    border-radius: 5px;
+    width: 140px;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+#avatargrid {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-top: 0px;
+}
+
+#avatarImg{
+    width: 120px;
+    height: 120px;
 }

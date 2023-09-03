@@ -5,10 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/juego.css">
 
 </head>
 <body>
-    <h1>2 Dots</h1>
+    <main>
+        <div id="contenedorJuego">
+            <div id="juego">
+                
+            </div>
+            <div id="tituloJuego">
+                <p>2 DOTS GAME</p>
+            </div>
+        </div>
+        <div id="contenedorUsuario">
+            <form id="form_entrada" action="juego.html">
+                <div class="itemform">
+                    <img src="./img/alien1.jpg" id="avatarImg" width="40">
+                    <input type="text" id="nick" value="nick" readonly>
+                </div>
+                <div class="itemform">
+                    <label for="puntuacion">Puntuacion</label>
+                    <input type="text" id="puntuacion" value="0" class="inputJuego" readonly>
+                </div>
+                <div class="itemform">
+                    <label for="tmpo">Tiempo restante</label>
+                    <input type="text" id="tmpo" value="0" class="inputJuego" readonly>
+                </div>
+            </form>
+        </div>
+    </main>
+
     <script src="./js/datosUsuario.js"></script>
     <script src="./js/juego.js"></script>
 </body>
